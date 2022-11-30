@@ -87,3 +87,11 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
 - xml (enabled by default - don't turn it off)
 
+# Créez votre première application
+## Principes de base du modèle-vue-contrôleur
+
+## Notions de base sur le routage
+
+## Validation du formulaire
+
+## Exécution de requêtes de base de données de base à l'aide du modèle de CodeIgniter
