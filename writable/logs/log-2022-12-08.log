@@ -1,0 +1,344 @@
+ERROR - 2022-12-08 08:56:43 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'devel'@'localhost' (using password: YES) in /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect()
+#1 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/tuto_ci/vendor/codeigniter4/framework/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/tuto_ci/vendor/codeigniter4/framework/system/BaseModel.php(585): CodeIgniter\Model->doFindAll()
+#6 /srv/tuto_ci/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#7 /srv/tuto_ci/app/Controllers/News.php(14): App\Models\NewsModel->getNews()
+#8 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\News->index()
+#9 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /srv/tuto_ci/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 /srv/tuto_ci/vendor/codeigniter4/framework/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 /srv/tuto_ci/vendor/codeigniter4/framework/system/BaseModel.php(585): CodeIgniter\Model->doFindAll()
+#5 /srv/tuto_ci/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#6 /srv/tuto_ci/app/Controllers/News.php(14): App\Models\NewsModel->getNews()
+#7 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\News->index()
+#8 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#9 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/tuto_ci/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-12-08 08:56:43 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(585): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/News.php(14): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\News->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-08 10:24:04 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'maamar_codeigniter'@'localhost' in /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect()
+#1 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/tuto_ci/vendor/codeigniter4/framework/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/tuto_ci/vendor/codeigniter4/framework/system/BaseModel.php(585): CodeIgniter\Model->doFindAll()
+#6 /srv/tuto_ci/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#7 /srv/tuto_ci/app/Controllers/News.php(14): App\Models\NewsModel->getNews()
+#8 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\News->index()
+#9 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /srv/tuto_ci/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' in /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 /srv/tuto_ci/vendor/codeigniter4/framework/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 /srv/tuto_ci/vendor/codeigniter4/framework/system/BaseModel.php(585): CodeIgniter\Model->doFindAll()
+#5 /srv/tuto_ci/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#6 /srv/tuto_ci/app/Controllers/News.php(14): App\Models\NewsModel->getNews()
+#7 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\News->index()
+#8 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#9 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/tuto_ci/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-12-08 10:24:04 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost'
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(585): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/News.php(14): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\News->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-08 10:26:09 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'maamar_codeigniter'@'localhost' in /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect()
+#1 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/tuto_ci/vendor/codeigniter4/framework/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/tuto_ci/vendor/codeigniter4/framework/system/BaseModel.php(585): CodeIgniter\Model->doFindAll()
+#6 /srv/tuto_ci/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#7 /srv/tuto_ci/app/Controllers/News.php(14): App\Models\NewsModel->getNews()
+#8 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\News->index()
+#9 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /srv/tuto_ci/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' in /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 /srv/tuto_ci/vendor/codeigniter4/framework/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 /srv/tuto_ci/vendor/codeigniter4/framework/system/BaseModel.php(585): CodeIgniter\Model->doFindAll()
+#5 /srv/tuto_ci/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#6 /srv/tuto_ci/app/Controllers/News.php(14): App\Models\NewsModel->getNews()
+#7 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\News->index()
+#8 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#9 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/tuto_ci/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-12-08 10:26:09 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost'
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(585): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/News.php(14): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\News->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-08 10:26:10 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'maamar_codeigniter'@'localhost' in /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect()
+#1 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/tuto_ci/vendor/codeigniter4/framework/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/tuto_ci/vendor/codeigniter4/framework/system/BaseModel.php(585): CodeIgniter\Model->doFindAll()
+#6 /srv/tuto_ci/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#7 /srv/tuto_ci/app/Controllers/News.php(14): App\Models\NewsModel->getNews()
+#8 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\News->index()
+#9 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /srv/tuto_ci/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' in /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 /srv/tuto_ci/vendor/codeigniter4/framework/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 /srv/tuto_ci/vendor/codeigniter4/framework/system/BaseModel.php(585): CodeIgniter\Model->doFindAll()
+#5 /srv/tuto_ci/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#6 /srv/tuto_ci/app/Controllers/News.php(14): App\Models\NewsModel->getNews()
+#7 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\News->index()
+#8 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#9 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/tuto_ci/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-12-08 10:26:10 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost'
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(585): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/News.php(14): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\News->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-08 10:40:39 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'maamar'@'localhost' in /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect()
+#1 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/tuto_ci/vendor/codeigniter4/framework/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/tuto_ci/vendor/codeigniter4/framework/system/BaseModel.php(585): CodeIgniter\Model->doFindAll()
+#6 /srv/tuto_ci/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#7 /srv/tuto_ci/app/Controllers/News.php(14): App\Models\NewsModel->getNews()
+#8 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\News->index()
+#9 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /srv/tuto_ci/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' in /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 /srv/tuto_ci/vendor/codeigniter4/framework/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 /srv/tuto_ci/vendor/codeigniter4/framework/system/BaseModel.php(585): CodeIgniter\Model->doFindAll()
+#5 /srv/tuto_ci/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#6 /srv/tuto_ci/app/Controllers/News.php(14): App\Models\NewsModel->getNews()
+#7 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\News->index()
+#8 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#9 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/tuto_ci/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-12-08 10:40:39 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost'
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(585): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/News.php(14): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\News->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-08 10:40:41 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'maamar'@'localhost' in /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect()
+#1 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/tuto_ci/vendor/codeigniter4/framework/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/tuto_ci/vendor/codeigniter4/framework/system/BaseModel.php(585): CodeIgniter\Model->doFindAll()
+#6 /srv/tuto_ci/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#7 /srv/tuto_ci/app/Controllers/News.php(14): App\Models\NewsModel->getNews()
+#8 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\News->index()
+#9 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /srv/tuto_ci/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' in /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 /srv/tuto_ci/vendor/codeigniter4/framework/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 /srv/tuto_ci/vendor/codeigniter4/framework/system/BaseModel.php(585): CodeIgniter\Model->doFindAll()
+#5 /srv/tuto_ci/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#6 /srv/tuto_ci/app/Controllers/News.php(14): App\Models\NewsModel->getNews()
+#7 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\News->index()
+#8 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#9 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/tuto_ci/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-12-08 10:40:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost'
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(585): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/News.php(14): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\News->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-08 10:40:41 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'maamar'@'localhost' in /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect()
+#1 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/tuto_ci/vendor/codeigniter4/framework/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/tuto_ci/vendor/codeigniter4/framework/system/BaseModel.php(585): CodeIgniter\Model->doFindAll()
+#6 /srv/tuto_ci/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#7 /srv/tuto_ci/app/Controllers/News.php(14): App\Models\NewsModel->getNews()
+#8 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\News->index()
+#9 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /srv/tuto_ci/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' in /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 /srv/tuto_ci/vendor/codeigniter4/framework/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 /srv/tuto_ci/vendor/codeigniter4/framework/system/BaseModel.php(585): CodeIgniter\Model->doFindAll()
+#5 /srv/tuto_ci/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#6 /srv/tuto_ci/app/Controllers/News.php(14): App\Models\NewsModel->getNews()
+#7 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\News->index()
+#8 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#9 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/tuto_ci/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-12-08 10:40:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost'
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(585): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/News.php(14): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\News->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-08 10:40:42 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'maamar'@'localhost' in /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect()
+#1 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/tuto_ci/vendor/codeigniter4/framework/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/tuto_ci/vendor/codeigniter4/framework/system/BaseModel.php(585): CodeIgniter\Model->doFindAll()
+#6 /srv/tuto_ci/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#7 /srv/tuto_ci/app/Controllers/News.php(14): App\Models\NewsModel->getNews()
+#8 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\News->index()
+#9 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /srv/tuto_ci/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' in /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /srv/tuto_ci/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 /srv/tuto_ci/vendor/codeigniter4/framework/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 /srv/tuto_ci/vendor/codeigniter4/framework/system/BaseModel.php(585): CodeIgniter\Model->doFindAll()
+#5 /srv/tuto_ci/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#6 /srv/tuto_ci/app/Controllers/News.php(14): App\Models\NewsModel->getNews()
+#7 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\News->index()
+#8 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#9 /srv/tuto_ci/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/tuto_ci/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-12-08 10:40:42 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost'
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(585): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/News.php(14): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\News->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
