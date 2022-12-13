@@ -3,14 +3,14 @@
 <?php if (! empty($news) && is_array($news)): ?>
 
     <?php foreach ($news as $news_item): ?>
-
+    <div class="container-fluid">
         <h3><?= esc($news_item['title']) ?></h3>
 
         <div class="main">
             <?= esc($news_item['body']) ?>
         </div>
         <p><a href="/news/<?= esc($news_item['slug'], 'url') ?>">View article</a></p>
-
+        </div>
     <?php endforeach ?>
 
 <?php else: ?>
