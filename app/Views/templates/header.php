@@ -1,6 +1,6 @@
 
 
-<!doctype html>
+ <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -46,6 +46,7 @@
   </div>
 </nav>
    <h1><?= esc($title) ?></h1>
+   
 
  
 
