@@ -1,0 +1,19 @@
+Voici les étapes détaillées pour installer CodeIgniter sur un serveur Linux en utilisant des commandes de ligne :
+
+Téléchargez la dernière version de CodeIgniter à partir du site officiel en utilisant la commande suivante :
+Copy code
+wget https://github.com/bcit-ci/CodeIgniter/archive/4.1.2.zip
+Décompressez le fichier téléchargé dans le répertoire de votre serveur web. Par exemple, pour Apache, cela pourrait être /var/www/ en utilisant la commande suivante :
+Copy code
+unzip 4.1.2.zip -d /var/www/
+Configurez votre base de données en créant une nouvelle base de données et en configurant les informations de connexion dans le fichier /var/www/CodeIgniter-4.1.2/app/config/database.php
+
+Donner les permissions pour l'application en utilisant la commande
+
+Copy code
+chmod -R 755 /var/www/CodeIgniter-4.1.2/
+Configurez votre serveur web pour pointer vers le répertoire public de CodeIgniter. Pour Apache, cela pourrait être fait en utilisant un fichier .htaccess ou en modifiant la configuration de votre virtual host.
+
+Testez votre installation en accédant à l'URL de votre serveur web. Vous devriez voir la page de bienvenue de CodeIgniter.
+
+Il est important de noter que ces étapes peuvent varier selon votre configuration de serveur et de version de Linux. Il est donc conseillé de consulter la documentation de CodeIgniter pour des instructions plus détaillées et des conseils pour les configurations spécifiques. Il peut également être utile de consulter des ressources en ligne pour des guides d'installation pour des distributions Linux spécifiques.
